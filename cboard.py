@@ -63,7 +63,7 @@ def draw_board(the_board):
 
 def show_columns(x):
     #print n
-    print "columns:", x
+    print ("columns: {} ".format(x))
     if len(x)!=0:
         draw_board(x)
         
@@ -78,7 +78,8 @@ def process(n):
     
 
 if __name__ == "__main__":
-    n=int(raw_input("Enter the size of chess board\n"))
+    n=int(input("Enter the size of chess board\n"))
+    #n=int(raw_input("Enter the size of chess board\n"))
     #columns = nq1.process(n)
     #draw_board(columns)
     process(n)
